@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>TicTacToe</h1>
+    <div class="choosing-style" id="choosing-style">
+      <p class="text-choosing">Choose your game mode</p>
+      <div class="buttons">
+        <button id="ai">Versus AI</button>
+        <button id="multiplayer">Local Multiplayer</button>
+      </div>
+    </div>
+
+    <div class="hidden playfield" id="playfield">
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+      <p class="playfield-box"></p>
+    </div>
+
+    <div class="player-info hidden" id="player-info">
+      <p>Player 1: <p class="blue space">X</p><p id="text-change"> Player 2 </p>:<p class="red space">O</p></p>
+    </div>
+
+    <div class="end-overlay hidden" id="end-overlay">
+      <div class="end-text"><p id="winner-text"></p>&nbsp;wins!</div>
+      <div class="buttons">
+        <button class="play-again" id="play-again">Play Again!</button>
+        <button class="main-menu" id="main-menu">Main Menu</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
